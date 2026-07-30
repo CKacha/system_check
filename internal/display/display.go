@@ -27,8 +27,8 @@ func PrintOS(o report.OS, explain bool) {
 		fmt.Println("  what this means:")
 		fmt.Println("  hostname is this computer's name on the network.")
 		fmt.Println("  platform/kernel tell you which OS and build you're running.")
-		fmt.Println("  uptime is how long it's been since the last restart —")
-		fmt.Println("  a very long uptime can sometimes mean pending updates need a reboot.")
+		fmt.Println("  uptime is how long it's been since the last restart - a long uptime")
+		fmt.Println("  is probably not good, make sure to restart your computer occasionally!")
 	}
 	fmt.Println()
 }
@@ -43,7 +43,7 @@ func PrintCPU(c report.CPU, explain bool) {
 		fmt.Println("  what this means:")
 		fmt.Println("  physical cores are actual processor cores; logical cores also")
 		fmt.Println("  count hyperthreads, so logical is often double physical.")
-		fmt.Println("  usage is how busy the CPU is right now — spikes are normal,")
+		fmt.Println("  usage is how busy the CPU is right now; spikes are normal,")
 		fmt.Println("  but if it's stuck near 100% something is hogging the processor.")
 	}
 	fmt.Println()
@@ -57,7 +57,7 @@ func PrintMemory(m report.Memory, explain bool) {
 	if explain {
 		fmt.Println()
 		fmt.Println("  what this means:")
-		fmt.Println("  this is your RAM — short-term memory your programs use while running.")
+		fmt.Println("  this is your RAM, the short-term memory your programs use while running.")
 		fmt.Println("  high usage isn't automatically bad (unused RAM is wasted RAM),")
 		fmt.Println("  but if it's maxed out and things feel slow, you may need to close")
 		fmt.Println("  some programs or consider more RAM.")
@@ -75,7 +75,7 @@ func PrintDisks(disks []report.DiskVolume, explain bool) {
 	if explain {
 		fmt.Println()
 		fmt.Println("  what this means:")
-		fmt.Println("  this is storage space, not RAM — where your files, apps, and OS live.")
+		fmt.Println("  this is storage space(not RAM!), it's where your files, apps, and OS live.")
 		fmt.Println("  once a drive gets close to full (usually 90%+), your computer can")
 		fmt.Println("  slow down or apps can fail to save/update, so it's worth clearing space.")
 	}

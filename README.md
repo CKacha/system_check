@@ -5,7 +5,7 @@ built for [c-li](c-li.hackclub.com)
 
 ## download
 
-grab a prebuilt binary from the [latest release](https://github.com/CKacha/system_check/releases/latest) — windows, macOS, and linux (amd64).
+grab a prebuilt binary from the [latest release](https://github.com/CKacha/system_check/releases/latest), currently the application supports windows(tested), macOS(untested), and linux(amd64, untested).
 
 ## run
 
