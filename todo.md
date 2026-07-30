@@ -22,3 +22,8 @@ thing to show
     gpu info
     colorized output
     flags? 
+
+added a menu: pick a section (os/cpu/mem/disk) for that data + a plain-english
+"what this means" explainer, or "everything" for the brief overview, which then
+offers one drill-down into a section. number+enter input via bufio.Scanner,
+no TUI lib for now.
